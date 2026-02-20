@@ -1,0 +1,16 @@
+{
+  "name": "tedin7-plugins",
+  "owner": {
+    "name": "tedin7"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by tedin7"
+  },
+  "plugins": [
+    {
+      "name": "claude-verification-rules",
+      "source": ".",
+      "description": "Injects mandatory verification rules at session start. Forces Claude to verify claims before touching files, do one complete review pass, and avoid the confident-assertion anti-pattern."
+    }
+  ]
+}

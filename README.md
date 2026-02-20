@@ -13,7 +13,8 @@ Forces Claude to:
 ## Install
 
 ```bash
-claude plugin install github.com/tedin7/claude-verification-rules
+claude plugin marketplace add github.com/tedin7/claude-verification-rules
+claude plugin install claude-verification-rules@tedin7-plugins
 ```
 
 ## How it works
