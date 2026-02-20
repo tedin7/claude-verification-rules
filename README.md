@@ -13,7 +13,7 @@ Forces Claude to:
 ## Install
 
 ```bash
-claude plugin install github.com/YOURNAME/claude-verification-rules
+claude plugin install github.com/tedin7/claude-verification-rules
 ```
 
 ## How it works
