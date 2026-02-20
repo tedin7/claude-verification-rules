@@ -9,7 +9,10 @@
   "plugins": [
     {
       "name": "claude-verification-rules",
-      "source": ".",
+      "source": {
+        "source": "github",
+        "repo": "tedin7/claude-verification-rules"
+      },
       "description": "Injects mandatory verification rules at session start. Forces Claude to verify claims before touching files, do one complete review pass, and avoid the confident-assertion anti-pattern."
     }
   ]
