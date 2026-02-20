@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf 'MANDATORY VERIFICATION RULES — applied before CLAUDE.md and all rules:\\n\\n1. VERIFY BEFORE TOUCHING FILES: Every technical claim that justifies a change must be verified with evidence FIRST. \"I believe X\" is not evidence. If uncertain, say so before acting — not after being challenged.\\n\\n2. ONE COMPLETE REVIEW PASS: When reviewing own work, do ALL of the following in a single pass:\\n   - Re-read every changed file line by line\\n   - Verify every claim in every comment against evidence (docs, source, codebase)\\n   - Check version numbers against authoritative sources\\n   - Ask: does this change actually solve the problem end-to-end?\\n   - Ask: does this change do nothing? If yes, revert it.\\n   Do NOT stop after finding the first issue.\\n\\n3. ANTI-PATTERN TO AVOID: Confident assertion → implement → user challenges → look harder → realize assertion was wrong → revert → repeat. The harder look must happen BEFORE implementation, not under pressure.\\n'"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "claude-verification-rules",
+  "description": "Injects mandatory verification rules at session start. Forces Claude to verify technical claims before touching files, do one complete review pass, and avoid the confident-assertion anti-pattern.",
+  "version": "1.0.0",
+  "author": {
+    "name": "tedin7"
+  },
+  "homepage": "https://github.com/tedin7/claude-verification-rules"
+}
