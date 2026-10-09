@@ -25,3 +25,22 @@ vocabolario inglese controllato. Conserva identificatori tecnici e dettagli nece
 
 Fonte: [ASD-STE100, Issue 9](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf).
 Criteri selezionati su 10 sessioni interattive campionate il 2 ottobre 2026.
+
+## Falsificazione prima del rilascio (regola costante)
+
+Ordine dell'operatore del 2026-10-09. Prima di mettere online un cambiamento di
+comportamento, un agente o una sessione **diversa da chi l'ha scritto** prova a
+farlo sbagliare: casi di bordo, raffiche e carico, dati malformati o privati,
+versioni e formati simili, strumenti e chiamanti esistenti, ripristino e
+riavvio, permessi. Lavora su copie o in isolamento, mai sulla produzione, e
+riporta per ogni punto "passa" o "fallisce" con la prova.
+
+- I test verdi e le prove dell'autore non bastano: controllano solo ciò che
+  l'autore ha pensato.
+- Si rilascia solo con i difetti gravi corretti, ognuno con un test che
+  fallisce prima e passa dopo, e con la falsificazione ripetuta su quella
+  versione.
+- Una modifica senza effetto sul comportamento (testo, documentazione) è
+  esclusa.
+- Nel resoconto distingui "provato dall'autore" da "falsificazione
+  indipendente superata".
